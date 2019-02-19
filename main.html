@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+  <title>Main page</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <a class="link" href="#"><img class="logo" src="assets/images/logo.svg" alt="Logo"></a>
+
+      <nav class="menu">
+        <button class="toggle hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#" class="menu-link">Speakers</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Sponsors</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Safety</a></li>
+          <li class="menu-item"><a href="#" class="menu-link buy-ticket">Buy a ticket</a> </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <div class="first-screen-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="first-screen">
+            <h1 class="title-mega">Is Ruby dead?</h1>
+
+            <span class="notice">17 Февраля 2019, 19:00 @ Atrium Hall</span>
+            <a class="red-link ml20" href="#">Buy a ticket</a>
+
+            <p class="text pr30">I've been hearing that from time to time for more than 6 years.
+              That kind of judgement come from understanding that Ruby is not a magical pill.
+              Using Ruby and especially Rails has it's tradeoffs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $('.toggle').on('click', function () {
+        $(this).toggleClass('is-active');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

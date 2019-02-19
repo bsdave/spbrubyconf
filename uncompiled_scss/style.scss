@@ -4,6 +4,8 @@
   }
 }
 
+@import 'hamburgers/hamburgers.scss';
+
 @import 'grid/functions';
 @import 'grid/variables';
 
@@ -14,3 +16,51 @@
 @import 'grid/grid';
 @import 'grid/utilities/display';
 @import 'grid/utilities/flex';
+
+@import 'styles/normalize';
+@import 'styles/variables';
+@import 'styles/din_pro';
+
+@import 'styles/mixins';
+
+@import 'styles/header';
+@import 'styles/common';
+@import 'styles/first_screen_box';
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  font-family: 'DIN Pro';
+  font-style: normal;
+  font-weight: normal; 
+  font-size: $fz-medium;
+
+  border-left: 10px solid $color-red;
+  border-right: 10px solid $color-red;
+
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+}
+
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: $color-red;
+  left: 0;
+  right: 0;
+  height: 10px;
+  z-index: 1000;
+}
+
+body:before {
+  top: 0;
+  z-index: 1000;
+}
+
+body:after {
+  bottom: 0;
+  z-index: 1000;
+}

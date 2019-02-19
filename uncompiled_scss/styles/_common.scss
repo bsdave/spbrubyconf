@@ -1,0 +1,48 @@
+.title {
+  font-size: $fz-medium;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-black;
+
+  &-big {
+    font-size: $fz-big-header;
+  }
+
+  &-mega {
+    font-size: $fz-mega-header;
+    margin: 60px 0 40px;
+    line-height: 150px;
+  }
+}
+
+.notice {
+  display: inline-block;
+  background: $color-red;
+  color: $color-white;
+  padding: 20px 25px;
+  font-weight: bold;
+
+  &-rounded {
+    border-radius: 8px;
+  }
+}
+
+.red-link {
+  font-size: 16px;
+  color: $color-red;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.pr30 {
+  padding-right: 30%;
+}
+
+.text {
+  line-height: 1.7;
+}

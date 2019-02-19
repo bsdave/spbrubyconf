@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'DIN Pro';
+  src:url($din-pro-path + '.eot');
+  src:url($din-pro-path + '.eot?#iefix') format('embedded-opentype'),
+    url($din-pro-path + '.woff') format('woff'),
+    url($din-pro-path + '.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src:url($din-pro-bold-path + '.eot');
+  src:url($din-pro-bold-path + '.eot?#iefix') format('embedded-opentype'),
+    url($din-pro-bold-path + '.woff') format('woff'),
+    url($din-pro-bold-path + '.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

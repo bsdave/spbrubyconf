@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+
+  padding: 40px 0 10px;
+
+  position: relative;
+
+  .logo {
+    display: inline-block;
+    width: auto;
+    height: 45px;
+  }
+
+  .menu {
+    background: white;
+
+    .menu-list {
+      position: absolute;
+      left: 0;
+      width: 100%;
+
+      display: none;
+      background: white;
+      margin-top: 5px;
+
+      padding: 0;
+      list-style: none;
+      z-index: 1000;
+
+      .menu-item {
+        display: block;
+        margin: 20px 0;
+
+        .menu-link {
+          display: block;
+          color: $color-black;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: $fz-medium;
+          
+          padding: 13px 22px 15px;
+
+          &.buy-ticket {
+            border: 1px solid $color-red;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    .toggle.is-active + .menu-list {
+      display: block;
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    padding: 40px 0;
+
+    .logo {
+      height: 75px;
+    }
+
+    .menu {
+      .toggle {
+        display: none;
+      }
+
+      .menu-list {
+        position: static;
+        display: block;
+
+        .menu-item {
+          display: inline-block;
+          margin: 10px 0 10px 50px;
+
+          .menu-link:hover {
+            color: $color-red;
+
+            &.buy-ticket {
+              background: $color-red;
+              color: $color-white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
