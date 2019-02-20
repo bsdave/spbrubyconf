@@ -118,11 +118,15 @@
   overflow-x: hidden;
 }
 
+.pull-right {
+  text-align: right;
+}
+
 @include desktop {
   .desktop-mt50 {
     margin-top: 50px;
   }
-  
+
   .footer {
     position: fixed;
     bottom: 34px;
