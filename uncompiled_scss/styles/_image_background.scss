@@ -8,3 +8,22 @@
 
   content: url('../images/people-thinking.svg');
 }
+
+.awesome-speaker-background {
+  display: inline-block;
+  width: 120%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+  left: 100px;
+
+  content: url('../images/awesome-speaker.svg');
+}
+
+.github {
+  content: url('../images/github.svg');
+}
+
+.twitter {
+  content: url('../images/twitter.svg');
+}

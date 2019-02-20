@@ -33,6 +33,7 @@
 @import 'styles/common';
 @import 'styles/first_screen_box';
 @import 'styles/image_background';
+@import 'styles/speakers';
 
 html {
   box-sizing: border-box;
@@ -45,38 +46,28 @@ body {
   font-weight: normal; 
   font-size: $fz-medium;
 
-  border-left: 10px solid $color-red;
-  border-right: 10px solid $color-red;
-
   margin-bottom: -10px;
   padding-bottom: 10px;
 
   overflow-x: hidden;
 }
 
-body:before, body:after {
-  content: "";
-  position: fixed;
-  background: $color-red;
-  left: 0;
-  right: 0;
-  height: 10px;
-  z-index: 1000;
-}
-
-body:before {
-  top: 0;
-  z-index: 1000;
-}
-
-body:after {
-  bottom: 0;
-  z-index: 1000;
-}
-
-@include desktop {
-  html, 
-  body {
-      height: 100%;
-  }
-}
+#top, #bottom, #left, #right {
+  	background: $color-red;
+    position: fixed;
+    z-index: 10000;
+    }
+    
+  	#left, #right {
+      top: 0; bottom: 0;
+      width: 10px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+      
+  	#top, #bottom {
+  		left: 0; right: 0;
+  		height: 10px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
