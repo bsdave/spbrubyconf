@@ -5,13 +5,13 @@
   color: $color-black;
 
   &-big {
-    font-size: $fz-big-header;
+    font-size: $mfz-big-header;
   }
 
   &-mega {
-    font-size: $fz-mega-header;
-    margin: 60px 0 40px;
-    line-height: 150px;
+    font-size: $mfz-mega-header;
+    margin: 20px 0 40px;
+    line-height: 120px;
   }
 }
 
@@ -33,16 +33,63 @@
   font-weight: bold;
   font-size: 16px;
   display: inline-block;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $color-red;
+  margin: 30px 0 10px;
 }
 
 .ml20 {
   margin-left: 20px;
 }
 
-.pr30 {
-  padding-right: 30%;
-}
-
 .text {
   line-height: 1.7;
+}
+
+.img-block {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.move-on-background {
+  position: relative;
+  z-index: -1;
+  width: 180%;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+@include desktop {
+  .red-link:hover {
+    color: red;
+    border-bottom: 2px solid red;
+  }
+
+  .title {
+    &-big {
+      font-size: $fz-big-header;
+    }
+  
+    &-mega {
+      font-size: $fz-mega-header;
+      line-height: 150px;
+      margin: 60px 0 40px;
+    }
+  }
+
+  .desktop-pr30 {
+    padding-right: 30%;
+  }
+
+  .red-link {
+    margin: 0 0 0 20px;
+  }
 }

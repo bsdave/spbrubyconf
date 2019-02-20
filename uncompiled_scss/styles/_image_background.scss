@@ -1,0 +1,10 @@
+.people-thinking-background {
+  display: inline-block;
+  width: 180%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+  left: -120px;
+
+  content: url('../images/people-thinking.svg');
+}
