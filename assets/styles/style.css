@@ -839,7 +839,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .speakers-block .speakers { width: 88%; } }
 
-.order-form-overlay { display: none; position: fixed; background: rgba(0, 0, 0, 0.5); top: 0; bottom: 0; left: 0; right: 0; z-index: 8888; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.order-form-overlay { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 8888; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
 .order-form-overlay .form-box { overflow-y: scroll; background: #DF2F39; height: 100%; padding: 20px; }
 
