@@ -27,3 +27,24 @@
 .twitter {
   content: url('../images/twitter.svg');
 }
+
+
+.join-us-background {
+  display: inline-block;
+  width: 100%;
+  
+  height: auto;
+  position: relative;
+  z-index: -1;
+  left: 0px;
+ 
+
+  content: url('../images/join-us.svg');
+}
+
+@include desktop {
+  .join-us-background {
+    width: 120%;
+    left: -150px;
+  }
+}

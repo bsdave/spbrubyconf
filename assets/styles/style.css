@@ -760,17 +760,23 @@ td, th { padding: 0; }
 
 .mobile-order-2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
 
+.detail { display: block; padding-bottom: 5px; }
+
 .notice { display: inline-block; background: #DF2F39; color: #FFF; padding: 15px 25px; font-weight: bold; font-size: 16px; text-align: center; }
 
 .notice.rounded { border-radius: 8px; }
 
 .notice.full-width { width: 100%; }
 
-.red-link { color: #DF2F39; font-weight: bold; font-size: 16px; display: inline-block; text-decoration: none; padding-bottom: 3px; }
+.red-link, .red-button { color: #DF2F39; font-weight: bold; font-size: 16px; display: inline-block; text-decoration: none; padding-bottom: 3px; }
 
-.red-link.bordered { border-bottom: 1px solid #DF2F39; }
+.red-link.bordered, .red-button.bordered { border-bottom: 1px solid #DF2F39; }
 
-.red-link.margined { margin: 30px 0 10px; }
+.red-link.margined, .red-button.margined { margin: 30px 0 10px; }
+
+.red-link.mtb, .red-button.mtb { margin-top: 10px; margin-bottom: 10px; }
+
+.red-button { display: inline-block; margin: 20px 0; background: #DF2F39; color: #FFF; padding: 10px 30px 12px; border: 1px solid #DF2F39; }
 
 .ml20 { margin-left: 20px; }
 
@@ -786,8 +792,10 @@ td, th { padding: 0; }
 
 .overflow-x-hidden { overflow-x: hidden; }
 
-@media (min-width: 992px) { .footer { position: fixed; bottom: 34px; right: 28%; }
-  .red-link:hover { color: red; border-bottom: 2px solid red; }
+@media (min-width: 992px) { .desktop-mt50 { margin-top: 50px; }
+  .footer { position: fixed; bottom: 34px; right: 28%; }
+  .red-link:hover { color: red; border-bottom: 1px solid red; }
+  .red-button:hover { background: #be1d26; }
   .title { margin-top: 10px; margin-bottom: 10px; }
   .title-big { font-size: 96px; line-height: 100px; }
   .title-mega { font-size: 128px; line-height: 150px; margin: 60px 0 40px; }
@@ -804,6 +812,10 @@ td, th { padding: 0; }
 .github { content: url("../images/github.svg"); }
 
 .twitter { content: url("../images/twitter.svg"); }
+
+.join-us-background { display: inline-block; width: 100%; height: auto; position: relative; z-index: -1; left: 0px; content: url("../images/join-us.svg"); }
+
+@media (min-width: 992px) { .join-us-background { width: 120%; left: -150px; } }
 
 .speakers-block { overflow-x: hidden; margin-top: 20px; }
 

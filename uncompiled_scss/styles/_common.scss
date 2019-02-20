@@ -31,6 +31,11 @@
   order: 2;
 }
 
+.detail {
+  display: block;
+  padding-bottom: 5px;
+}
+
 .notice {
   display: inline-block;
   background: $color-red;
@@ -49,7 +54,8 @@
   }
 }
 
-.red-link {
+.red-link,
+.red-button {
   color: $color-red;
   font-weight: bold;
   font-size: $fz-medium;
@@ -64,6 +70,20 @@
   &.margined {
     margin: 30px 0 10px;
   }
+
+  &.mtb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.red-button {
+  display: inline-block;
+  margin: 20px 0;
+  background: $color-red;
+  color: $color-white;
+  padding: 10px 30px 12px;
+  border: 1px solid $color-red;
 }
 
 .ml20 {
@@ -99,6 +119,10 @@
 }
 
 @include desktop {
+  .desktop-mt50 {
+    margin-top: 50px;
+  }
+  
   .footer {
     position: fixed;
     bottom: 34px;
@@ -107,7 +131,11 @@
 
   .red-link:hover {
     color: red;
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid red;
+  }
+
+  .red-button:hover {
+    background: darken($color-red, $amount: 10%)
   }
 
   .title {
