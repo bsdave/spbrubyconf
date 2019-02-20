@@ -15,6 +15,14 @@
   }
 }
 
+.footer {
+  text-align: center;
+}
+
+.safety-police {
+  padding: 20px 20px 100px;
+}
+
 .mobile-order-1 {
   order: 1;
 }
@@ -42,15 +50,20 @@
 }
 
 .red-link {
-  font-size: 16px;
   color: $color-red;
   font-weight: bold;
-  font-size: 16px;
+  font-size: $fz-medium;
   display: inline-block;
   text-decoration: none;
   padding-bottom: 3px;
-  border-bottom: 1px solid $color-red;
-  margin: 30px 0 10px;
+
+  &.bordered {
+    border-bottom: 1px solid $color-red;
+  }
+
+  &.margined {
+    margin: 30px 0 10px;
+  }
 }
 
 .ml20 {
@@ -86,6 +99,12 @@
 }
 
 @include desktop {
+  .footer {
+    position: fixed;
+    bottom: 34px;
+    right: 28%;
+  }
+
   .red-link:hover {
     color: red;
     border-bottom: 2px solid red;
@@ -111,7 +130,7 @@
     padding-right: 30%;
   }
 
-  .red-link {
+  .red-link.margined {
     margin: 0 0 0 20px;
   }
 
@@ -120,3 +139,4 @@
     order: 0;
   }
 }
+
