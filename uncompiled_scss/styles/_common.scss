@@ -124,6 +124,10 @@
 }
 
 @include desktop {
+  .safety-police {
+    padding: 20px 0 100px;
+  }
+
   .m-overflow-x-hidden {
     overflow-x: visible;
   }
