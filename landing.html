@@ -572,7 +572,7 @@
       });
 
       $('.tap-to-close').on('click', function () {
-        $('.order-form-overlay').removeClass('opened');        
+        $('.order-form-overlay').removeClass('opened');
       });
 
       $('#increment').on('click', function () {
@@ -667,7 +667,7 @@
         if (item.length) { return item; }
       });
 
-      $('.top-link').click(function (e) {
+    $('.top-link').click(function (e) {
       var href = $(this).attr("href"),
         offsetTop = href === "#" ? 0 : $(href).offset().top;
 
@@ -682,7 +682,7 @@
         offsetTop = href === "#" ? 0 : $(href).offset().top;
 
       $('html, body').stop().animate({
-        scrollTop: offsetTop
+        scrollTop: offsetTop + 1 
       }, 500);
       e.preventDefault();
     });

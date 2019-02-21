@@ -959,6 +959,6 @@ body { font-family: 'DIN Pro'; font-style: normal; font-weight: normal; font-siz
 
 @media (min-width: 992px) { body { padding: 0; } }
 
-.block { padding-top: 10%; min-height: 50vh; }
+.block { padding-top: 10%; min-height: 100vh; }
 
 .block:focus { outline: none; }
