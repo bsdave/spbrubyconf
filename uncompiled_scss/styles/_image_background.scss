@@ -1,23 +1,34 @@
 .people-thinking-background {
   display: inline-block;
-  width: 180%;
   height: auto;
   position: relative;
   z-index: -1;
-  left: -120px;
+  width: 120%;
+  left: -10%;
 
   content: url('../images/people-thinking.svg');
 }
 
 .awesome-speaker-background {
   display: inline-block;
-  width: 120%;
+  width: 100%;
   height: auto;
   position: relative;
   z-index: -1;
-  left: 100px;
+  left: 0px;
 
   content: url('../images/awesome-speaker.svg');
+}
+
+.glorious-partners-background {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  z-index: -1;
+  width: 120%;
+  left: -10%;
+
+  content: url('../images/glorious-partners.svg');
 }
 
 .github {
@@ -44,7 +55,23 @@
 
 @include desktop {
   .join-us-background {
+    width: 150%;
+    left: -50%;
+  }
+
+  .awesome-speaker-background {
     width: 120%;
-    left: -150px;
+    left: 8%;
+  }
+
+  .glorious-partners-background {
+    width: 150%;
+    left: -50%;
+  }
+
+  .people-thinking-background {
+    width: 180%;
+    left: -20%;
+    bottom: -38px;
   }
 }

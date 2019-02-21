@@ -4,6 +4,6 @@
 
 1. Установить зависимости `npm install`
 2. Запустить pipeline `gulp`
-3. Вносить изменения в `assets/**/*.scss`
+3. Вносить изменения в `uncompiled_scss/**/*.scss`
 
 **Profit!**

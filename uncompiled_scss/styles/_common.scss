@@ -114,7 +114,8 @@
   width: 180%;
 }
 
-.overflow-x-hidden {
+.overflow-x-hidden,
+.m-overflow-x-hidden {
   overflow-x: hidden;
 }
 
@@ -123,6 +124,10 @@
 }
 
 @include desktop {
+  .m-overflow-x-hidden {
+    overflow-x: visible;
+  }
+  
   .desktop-mt50 {
     margin-top: 50px;
   }
