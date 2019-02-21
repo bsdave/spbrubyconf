@@ -565,6 +565,7 @@
 
       $('.open-ofo').on('click', function () {
         $('.order-form-overlay').addClass('opened');
+        $('.hamburger').toggleClass('is-active');
       });
 
       $('#close-order-form-overlay').on('click', function () {
@@ -668,6 +669,7 @@
       });
 
     $('.top-link').click(function (e) {
+      $('.hamburger').toggleClass('is-active');
       var href = $(this).attr("href"),
         offsetTop = href === "#" ? 0 : $(href).offset().top;
 
@@ -678,6 +680,7 @@
     });
 
     menuItems.click(function (e) {
+      $('.hamburger').toggleClass('is-active');
       var href = $(this).attr("href"),
         offsetTop = href === "#" ? 0 : $(href).offset().top;
 
