@@ -728,6 +728,8 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .red-color { color: #DF2F39 !important; }
 
+.fixed-header { position: fixed; top: 0; left: 0; right: 0; background: #FFF; z-index: 888; }
+
 .header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background: white; padding: 40px 0 10px; position: relative; }
 
 .header .logo { display: inline-block; width: auto; height: 45px; }
@@ -740,17 +742,19 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .header .menu .menu-list .menu-item .menu-link { display: block; color: #000; text-decoration: none; font-weight: bold; font-size: 16px; padding: 13px 22px 15px; }
 
-.header .menu .menu-list .menu-item .menu-link.buy-ticket { border: 1px solid #DF2F39; border-radius: 8px; }
+.header .menu .menu-list .menu-item .menu-link.buy-ticket { border: 1px solid #DF2F39; border-radius: 8px; background: #FFF; margin-left: 22px; }
 
 .header .menu .toggle.is-active + .menu-list { display: block; }
 
-@media (min-width: 992px) { .header { padding: 40px 0; margin-right: -105px; margin-left: -105px; }
+@media (min-width: 992px) { .header { padding-top: 40px; padding-bottom: 0; margin-right: -105px; margin-left: -105px; }
   .header .logo { height: 75px; }
   .header .menu .toggle { display: none; }
   .header .menu .menu-list { position: static; display: block; }
-  .header .menu .menu-list .menu-item { display: inline-block; margin: 10px 0 10px 50px; }
-  .header .menu .menu-list .menu-item .menu-link:hover { color: #DF2F39; }
-  .header .menu .menu-list .menu-item .menu-link:hover.buy-ticket { background: #DF2F39; color: #FFF; } }
+  .header .menu .menu-list .menu-item { display: inline-block; margin: 10px 0 10px 30px; }
+  .header .menu .menu-list .menu-item .menu-link.buy-ticket { margin-left: 0; }
+  .header .menu .menu-list .menu-item .menu-item.active .menu-link, .header .menu .menu-list .menu-item .menu-link:hover { color: #DF2F39; }
+  .header .menu .menu-list .menu-item .menu-item.active .menu-link.buy-ticket, .header .menu .menu-list .menu-item .menu-link:hover.buy-ticket { background: #DF2F39; color: #FFF; }
+  .menu-item.active .menu-link { color: #DF2F39 !important; } }
 
 .title { font-size: 16px; font-weight: bold; text-decoration: none; color: #000; }
 
@@ -760,7 +764,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .footer { text-align: center; }
 
-.safety-police { padding: 20px 20px 100px; }
+.safety-police { padding: 20px 0 30px; }
 
 .mobile-order-1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
 
@@ -800,11 +804,15 @@ input[type="number"] { -moz-appearance: textfield; }
 
 .pull-right { text-align: right; }
 
+.static { position: static; }
+
+.pt-30 { padding-top: 30px; }
+
 @media (min-width: 992px) { .safety-police { padding: 20px 0 100px; }
   .m-overflow-x-hidden { overflow-x: visible; }
-  .desktop-mt50 { margin-top: 50px; }
-  .footer { position: fixed; bottom: 34px; right: 28%; }
-  .red-link:hover { color: red; border-bottom: 1px solid red; }
+  .footer { position: absolute; left: 30%; bottom: 5%; }
+  .red-link:hover { color: red; border-bottom: 1px solid red; background: #FFF; }
+  .open-ofo:hover, .red-button:hover, .red-link:hover { cursor: pointer; }
   .red-button:hover { background: #be1d26; }
   .title { margin-top: 10px; margin-bottom: 10px; }
   .title-big { font-size: 96px; line-height: 100px; }
@@ -903,6 +911,7 @@ input[type="number"] { -moz-appearance: textfield; }
 
 @media (min-width: 992px) { .form .checkout:hover { background: #e6e6e6; }
   .form .count-button:not(:disabled):hover { background: #e2454e; }
+  .order-form-overlay .tap-to-close { width: 100%; height: 100%; }
   .order-form-overlay .form-box { width: 60%; padding: 50px 80px; max-width: 600px; } }
 
 .mt60 { margin-top: 60px; }
@@ -949,3 +958,7 @@ body { font-family: 'DIN Pro'; font-style: normal; font-weight: normal; font-siz
 #bottom { bottom: 0; }
 
 @media (min-width: 992px) { body { padding: 0; } }
+
+.block { padding-top: 10%; min-height: 50vh; }
+
+.block:focus { outline: none; }

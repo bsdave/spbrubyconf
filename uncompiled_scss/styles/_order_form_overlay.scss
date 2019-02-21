@@ -11,7 +11,7 @@
   justify-content: flex-end;
 
   .form-box {
-  overflow-y: scroll;
+    overflow-y: scroll;
 
     background: $color-red;
     height: 100%;
@@ -165,8 +165,13 @@
   }
 
   .order-form-overlay {
+    .tap-to-close {
+      width: 100%;
+      height: 100%;
+    }
+
     .form-box {
-      width: 60%;  
+      width: 60%;
       padding: 50px 80px;
       max-width: 600px;
     }

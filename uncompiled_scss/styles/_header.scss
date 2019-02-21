@@ -1,3 +1,12 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $color-white;
+  z-index: 888;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -46,6 +55,8 @@
           &.buy-ticket {
             border: 1px solid $color-red;
             border-radius: 8px;
+            background: $color-white;
+            margin-left: 22px;
           }
         }
       }
@@ -59,7 +70,8 @@
 
 @include desktop {
   .header {
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-bottom: 0;
     margin-right: -105px;
     margin-left: -105px;
 
@@ -78,8 +90,15 @@
 
         .menu-item {
           display: inline-block;
-          margin: 10px 0 10px 50px;
+          margin: 10px 0 10px 30px;
 
+          .menu-link {
+            &.buy-ticket {
+              margin-left: 0;
+            }
+          }
+
+          .menu-item.active .menu-link,
           .menu-link:hover {
             color: $color-red;
 
@@ -91,5 +110,9 @@
         }
       }
     }
+  }
+
+  .menu-item.active .menu-link {
+    color: $color-red !important;
   }
 }

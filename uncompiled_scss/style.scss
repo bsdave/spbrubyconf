@@ -78,3 +78,12 @@ body {
     padding: 0;
   }
 }
+
+.block {
+  padding-top: 10%;
+  min-height: 50vh;
+
+  &:focus {
+    outline: none;
+  }
+}

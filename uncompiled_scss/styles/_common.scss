@@ -20,7 +20,7 @@
 }
 
 .safety-police {
-  padding: 20px 20px 100px;
+  padding: 20px 0 30px;
 }
 
 .mobile-order-1 {
@@ -123,6 +123,14 @@
   text-align: right;
 }
 
+.static {
+  position: static;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
 @include desktop {
   .safety-police {
     padding: 20px 0 100px;
@@ -131,20 +139,25 @@
   .m-overflow-x-hidden {
     overflow-x: visible;
   }
-  
-  .desktop-mt50 {
-    margin-top: 50px;
-  }
 
   .footer {
-    position: fixed;
-    bottom: 34px;
-    right: 28%;
+    position: absolute;
+    left: 30%;
+    bottom: 5%;
   }
 
   .red-link:hover {
     color: red;
     border-bottom: 1px solid red;
+    background: $color-white;
+  }
+
+  .open-ofo,
+  .red-button,
+  .red-link {
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .red-button:hover {
