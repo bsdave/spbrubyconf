@@ -36,6 +36,7 @@
 @import 'styles/speakers';
 @import 'styles/order_form_overlay';
 @import 'styles/partners';
+@import 'styles/schedule';
 
 html {
   box-sizing: border-box;
@@ -49,6 +50,7 @@ body {
   font-size: $fz-medium;
 
   overflow-x: hidden;
+  padding: 10px;
 }
 
 #top, #bottom, #left, #right {
@@ -70,3 +72,9 @@ body {
     }
     #top { top: 0; }
     #bottom { bottom: 0; }
+
+@include desktop {
+  body {
+    padding: 0;
+  }
+}
