@@ -46,7 +46,7 @@ html {
 body {
   font-family: 'DIN Pro';
   font-style: normal;
-  font-weight: normal; 
+  font-weight: normal;
   font-size: $fz-medium;
 
   overflow-x: hidden;
@@ -58,17 +58,17 @@ body {
     position: fixed;
     z-index: 10000;
     }
-    
+
   	#left, #right {
       top: 0; bottom: 0;
-      width: 10px;
+      width: 15px;
     }
     #left { left: 0; }
     #right { right: 0; }
-      
+
   	#top, #bottom {
   		left: 0; right: 0;
-  		height: 10px;
+  		height: 15px;
     }
     #top { top: 0; }
     #bottom { bottom: 0; }
@@ -86,4 +86,9 @@ body {
   &:focus {
     outline: none;
   }
+}
+
+.subtitle {
+  font-size: 1.5em;
+  font-weight: normal;
 }

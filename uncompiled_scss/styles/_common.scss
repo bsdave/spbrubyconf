@@ -39,11 +39,15 @@
 .notice {
   display: inline-block;
   background: $color-red;
-  color: $color-white;
   padding: 15px 25px;
   font-weight: bold;
+
+  color: $color-white;
   font-size: $fz-medium;
   text-align: center;
+  a {
+    color: $color-white;
+  }
 
   &.rounded {
     border-radius: 8px;
@@ -172,7 +176,7 @@
       font-size: $fz-big-header;
       line-height: 100px;
     }
-  
+
     &-mega {
       font-size: $fz-mega-header;
       line-height: 150px;
@@ -181,7 +185,7 @@
   }
 
   .desktop-pr30 {
-    padding-right: 30%;
+    padding-right: 25%;
   }
 
   .red-link.margined {
